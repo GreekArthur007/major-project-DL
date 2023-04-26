@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        
+        <title>Digital X-Ray</title>
+
+    </head>
+
+<body >
+
+      
+        <header class="header" id="header">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+              </div>  
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Digital Knee X-ray</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link ">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact Us</a>
+                        </li>
+
+                        <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+
+            </nav>
+        </header>
+    <main class="main">
+     <section class="home section" id="home" >
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1>Knee Osteoarthritis <br><span>Prediction</span> <br></h1>
+                <p class="par">Diagnosis for the Prediction of knee Osteoarthritis Using Deep Learning Implemented by Keras and Tensorflow <br>  Choose your X-Ray visual file and click Predict to get your diagnosis.</p>
+                <div class="form">
+                    
+                    <div>
+                        <form id="upload-file" method="post" enctype="multipart/form-data">
+                             <label for="imageUpload" class="upload-label">
+                                Select your Knee X-Ray Visual
+                             </label>
+                             <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                        </form>
+                    
+                        <div class="image-section" style="display:none;">
+                             <div class="img-preview">
+                                 <div id="imagePreview">
+                                </div>
+                            </div>
+                        <div>
+                        <button type="button" class="upload-label" id="btn-predict">Predict!</button>
+                    </div>
+                
+                    
+                    <div class="loader" style="display:none"></div>
+                    
+                         <h7 id="result" >
+                             <span> </span>
+                        </h7>
+                    
+                     </div>
+                </div>
+
+            </div>   
+        </div>
+       </section>
+
+        
+       <section class="about section container" id="about">
+        <div class="about__container grid">
+            <div class="about__data">
+                <h2 class="section__title-center">Find Out A Little More <br> About Us</h2> <br>
+                <p class="about__description">Here at our website, it can predict the knee Osteoarthritis by giving the Digital knee X-Ray. It diagnosis your X-Ray and predict the level of your knee Osteoarthritis.
+                </p>
+            </div>
+
+                <img src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/310/310579/osteoarthritis-of-the-knee.jpg?w=1155&h=1419" alt="">
+        </div>
+      </section>
+
+
+       
+        <section class="contact section container" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__content">
+                    <h2 class="section__title-center">Contact Me From <br> Here</h2> <br>
+                    <p class="contact__description">You can contact me from here, incase you are not able to use our 
+                        services like navbars in your website, I will gladly assist you.</p>
+                </div>
+
+                <ul class="contact__content grid">
+                    <li class="contact__address">Telephone: <span class="contact__information">999 - 888 - 777</span></li>
+                    <li class="contact__address">Email:  <span class="contact__information">rangalasrivarsha29@gmail.com</span></li>
+                    <li class="contact__address">Location: <span class="contact__information">Vizag - India</span></li>
+                </ul>
+
+                <div class="contact__content">
+                    <a href="https://github.com/pulkithanda" class="button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+        
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Digital X-Ray</a>
+                    <p class="footer__description">Predict osteoarthritis-of-the-knee <br>  Faster and Easier</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul class="footer__links">
+                        <li><a href="https://github.com/pulkithanda" class="footer__link">Support </a></li>
+                        <li><a href="#" class="footer__link">Donate </a></li>
+                        <li><a href="#" class="footer__link">Report a bug</a></li>
+                        <li><a href="#" class="footer__link">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                        <li><a href="#" class="footer__link">Get in touch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Community</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Support</a></li>
+                        <li><a href="https://github.com/pulkithanda" class="footer__link">Questions</a></li>
+                        <li><a href="#" class="footer__link">Usage help</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="https://github.com/pulkithanda" class="footer__social-link"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/itzz_pulkit.05/" class="footer__social-link"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Group no-A04 . All right reserved</p>
+        </footer>
+
+       
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a> 
+    
+        <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"> 
+        <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>    
+</body>
+
+</html>
